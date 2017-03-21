@@ -9,51 +9,81 @@
 </head>
 <body>
 
-	<form class="form-horizontal">
-	  <fieldset>
-	    <legend>Walk-A-Thon</legend>
-	    <div class="form-group">
-	      <label for="name" class="col-lg-2 control-label">Name</label>
-	      <div class="col-lg-10">
-	        <input type="text" class="form-control" id="name" placeholder="Name">
-	      </div>
-	    </div>
-	    <div class="form-group">
-	      <label for="inputEmail" class="col-lg-2 control-label">Email</label>
-	      <div class="col-lg-10">
-	        <input type="text" class="form-control" id="inputEmail" placeholder="Email">
-	      </div>
-	    </div>
-	    	<div class="input-group">
-			  <span class="input-group-addon">$</span>
-			  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-			  <span class="input-group-addon">.00</span>
+
+	<div class="jumbotron">
+		<div class="container">
+  			<h1>Nashville Walk-a-Thon!</h1>
+  			<p>Mighty Morphin Power-Walkers</p>
+  		</div>
+  	</div>	
+
+
+
+
+
+	<div class="container">
+
+
+		<div class="col-md-6">
+			<div class="panel panel-default">
+			  	<div class="panel-heading">
+			    	<h3 class="panel-title">Current Donations</h3>
+			  	</div>
+			  	<table class="table" id="ticketTable">
+		   			<tbody>
+
+		   			</tbody>
+		  		</table>
 			</div>
-	    <div class="form-group">
-	      <label class="col-lg-2 control-label">Donation Type:</label>
-	      <div class="col-lg-10">
-	        <div class="radio">
-	          <label>
-	            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
-	            Single amount
-	          </label>
-	        </div>
-	        <div class="radio">
-	          <label>
-	            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-	            Per lap
-	          </label>
-	        </div>
-	      </div>
-	    </div>
-	    <div class="form-group">
-	      <div class="col-lg-10 col-lg-offset-2">
-	        <button type="reset" class="btn btn-default">Cancel</button>
-	        <button type="submit" class="btn btn-primary">Donate</button>
-	      </div>
-	    </div>
-	  </fieldset>
-	</form>
+		</div>
+		
+		<div class="col-md-6">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">Enter your information</h3>
+			</div>
+			<div id="warning">
+
+			</div>
+			
+				<div class="panel-body">
+					<label for="name">Name:</label>
+					<div class="input-group">
+					<span class="input-group-addon" id="basic-addon3">Full Name:</span>
+					<input type="text" class="form-control" id="name" aria-describedby="basic-addon3" placeholder="Your name">
+				</div>
+				<hr>
+					<label for="email">Email:</label>
+					<div class="input-group">
+					<span class="input-group-addon" id="basic-addon2">@</span>
+					<input type="email" class="form-control" id="email" name="email" placeholder="Your email..." aria-describedby="basic-addon2">
+					</div>
+				<hr>
+					<label for="amount">Amount (to the nearst dollar):</label>
+					<div class="input-group">
+					<span class="input-group-addon" id="basic-addon3">$</span>
+					<input type="number" class="form-control" id="amount" aria-describedby="basic-addon3" placeholder="Donation">
+					</div>
+				<hr>
+					<label for="amountType">One time amount or Per-lap</label>
+					<div class="input-group">
+					<span class="input-group">
+					<input type="radio" name="amountType" value="One Time" checked><span> One Time</span>
+					</span>
+					<span class="input-group">
+					<input type="radio" name="amountType" value="Per-Lap"><span> Per-Lap</span>
+					</span>
+					</div>
+					<div class="btn-group" role="group" aria-label="...">
+				<hr>
+					<button id="donate" type="button" class="btn btn-default">Donate</button>
+					<button id="cancel" type="button" class="btn btn-default">Cancel</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
 
 
 
