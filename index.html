@@ -17,18 +17,15 @@
   		</div>
   	</div>	
 
-
-
-
-
 	<div class="container">
 
 
-		<div class="col-md-6">
+		<div class="col-lg-6">
 			<div class="panel panel-default">
 			  	<div class="panel-heading">
 			    	<h3 class="panel-title">Current Donations</h3>
 			  	</div>
+			  	
 			  	<table class="table" id="inputTable">
 		   			<tbody>
 
@@ -37,47 +34,45 @@
 			</div>
 		</div>
 		
-		<div class="col-md-6">
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h3 class="panel-title">Enter your information</h3>
-			</div>
-			<div id="warning">
-
-			</div>
+		<div class="col-lg-6">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">Enter your information</h3>
+				</div>
+			
 			
 				<div class="panel-body">
 					<label for="name">Name:</label>
-					<div class="input-group">
-					<span class="input-group-addon" id="basic-addon3">Full Name:</span>
-					<input type="text" class="form-control" id="name" aria-describedby="basic-addon3" placeholder="Your name">
-				</div>
-				<hr>
-					<label for="email">Email:</label>
-					<div class="input-group">
-					<span class="input-group-addon" id="basic-addon2">@</span>
-					<input type="email" class="form-control" id="email" name="email" placeholder="Your email..." aria-describedby="basic-addon2">
+						<div class="input-group">
+						<span class="input-group-addon" id="basic-addon3">Full Name:</span>
+						<input type="text" class="form-control" id="name" aria-describedby="basic-addon3" placeholder="Your name">
 					</div>
-				<hr>
-					<label for="amount">Amount (to the nearst dollar):</label>
-					<div class="input-group">
-					<span class="input-group-addon" id="basic-addon3">$</span>
-					<input type="number" class="form-control" id="amount" aria-describedby="basic-addon3" placeholder="Donation">
-					</div>
-				<hr>
-					<label for="amountType">One time amount or Per-lap</label>
-					<div class="input-group">
-					<span class="input-group">
-					<input type="radio" name="amountType" value="One Time" checked><span> One Time</span>
-					</span>
-					<span class="input-group">
-					<input type="radio" name="amountType" value="Per-Lap"><span> Per-Lap</span>
-					</span>
-					</div>
-					<div class="btn-group" role="group" aria-label="...">
-				<hr>
-					<button id="donate" type="button" class="btn btn-default">Donate</button>
-					<button id="cancel" type="button" class="btn btn-default">Cancel</button>
+					<hr>
+						<label for="email">Email:</label>
+						<div class="input-group">
+						<span class="input-group-addon" id="basic-addon2">@</span>
+						<input type="email" class="form-control" id="email" name="email" placeholder="Your email..." aria-describedby="basic-addon2">
+						</div>
+					<hr>
+						<label for="amount">Amount (to the nearst dollar):</label>
+						<div class="input-group">
+						<span class="input-group-addon" id="basic-addon3">$</span>
+						<input type="number" class="form-control" id="amount" aria-describedby="basic-addon3" placeholder="Donation">
+						</div>
+					<hr>
+						<label for="amountType">One time amount or Per-lap</label>
+						<div class="input-group">
+						<span class="input-group">
+						<input type="radio" name="amountType" value="One Time" id="oneTime" checked><span> One Time</span>
+						</span>
+						<span class="input-group">
+						<input type="radio" name="amountType" value="Per-Lap" id="perLap"><span> Per-Lap</span>
+						</span>
+						</div>
+						<div class="btn-group" role="group" aria-label="...">
+					<hr>
+						<button id="donate" type="button" class="btn btn-default">Donate</button>
+						<button id="cancel" type="button" class="btn btn-default">Cancel</button>
 					</div>
 				</div>
 			</div>
@@ -91,5 +86,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
 	</script>
 	<script type="text/javascript" src="main.js"></script>
+	<script type="text/javascript" src="donate.js"></script>
+	<script type="text/javascript" src="DOMhandler.js"></script>
 </body>
 </html>
