@@ -21,11 +21,11 @@ var DonorInfo = (function() {
             tableString += `<tbody><th>Name</th><th>Email</th><th>Amount</th><th>Type</th>`;
             for (var i = 0; i < donorArray.length; i++) {
                 currentDonor = donorArray[i];
-                tableString += `<tr>`;
+                tableString += `<tr id="theTable">`;
                 tableString += `<td>${currentDonor.name}</td>`;
                 tableString += `<td>${currentDonor.email}</td>`;
                 tableString += `<td>${currentDonor.amount}</td>`;
-                tableString += `<td>${currentDonor.type}</td>/tr>`;
+                tableString += `<td>${currentDonor.type}</td></tr>`;
             }
             tableString += `</tbody>`;
             inputTable.innerHTML = tableString;
