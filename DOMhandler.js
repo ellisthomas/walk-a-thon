@@ -8,13 +8,13 @@ var oneTime = document.getElementById("oneTime");
 var perLap = document.getElementById("perLap");
 var donate = document.getElementById("donate");
 var cancel = document.getElementById("cancel");
-var newDonor = {};
 
 donate.addEventListener("click", printDonor);
-cancel.addEventListener("click", cancel);
+cancel.addEventListener("click", clear);
 
 
 function printDonor() {
+var newDonor = {};
 	newDonor.name = document.getElementById("name").value;
 	newDonor.email = document.getElementById("email").value;
 	newDonor.amount = document.getElementById("amount").value;

@@ -1,12 +1,6 @@
 var DonorInfo = (function() {
 
-    var donorArray = [{
-
-        name: "",
-        email: "",
-        amount: "",
-        type: ""
-    }];
+    var donorArray = [{name: "Tom", email: "email@scoops.com", amount: 88}];
 
 
     return {
@@ -40,4 +34,3 @@ DonorInfo.showDonor();
 
 
 
-// var donationType = "";

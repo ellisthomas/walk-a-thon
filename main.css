@@ -5,3 +5,9 @@ input.form-control {
 div.input-group {
 	width: 75%;
 }
+
+.jumbotron {
+	background-image: url("https://images.fineartamerica.com/images-medium-large-5/nashville-skyline-black-and-white-john-magyar-photography.jpg");
+	
+
+}
