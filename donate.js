@@ -14,7 +14,7 @@ var DonorInfo = (function() {
             donorArray.push(newDonor);
 
         },
-        showDonor: function() {
+        showDonor: function(newDonor) {
             var inputTable = document.getElementById("inputTable");
             var tableString = "";
 
@@ -28,7 +28,7 @@ var DonorInfo = (function() {
                 tableString += `<td>${currentDonor.type}</td>/tr>`;
             }
             tableString += `</tbody>`;
-            donorArray.innerHTML = tableString;
+            inputTable.innerHTML = tableString;
         },
         getDonor: function() {
             return donorArray;

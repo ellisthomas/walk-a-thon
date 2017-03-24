@@ -1,4 +1,3 @@
-var newDonor = {};
 
 //////////////// EVENT LISTENERS ////////////////
 
@@ -9,4 +8,34 @@ var oneTime = document.getElementById("oneTime");
 var perLap = document.getElementById("perLap");
 var donate = document.getElementById("donate");
 var cancel = document.getElementById("cancel");
+var newDonor = {};
+
+donate.addEventListener("click", printDonor);
+cancel.addEventListener("click", cancel);
+
+
+function printDonor() {
+	newDonor.name = document.getElementById("name").value;
+	newDonor.email = document.getElementById("email").value;
+	newDonor.amount = document.getElementById("amount").value;
+	newDonor.type = document.getElementsByName("amountType")
+	for (var i = 0; i < 2; i++) {
+		if (newDonor.type[i].checked) {
+			newDonor.type = newDonor.type[i].value
+		}
+	}
+	if (newDonor.name === "" || newDonor.email === "" || newDonor.amount === "") {
+		alert("Easy there killer, fill in the blanks!")
+	} else {
+		DonorInfo.addDonor(newDonor);
+		DonorInfo.showDonor(newDonor);
+		clear();
+	};
+};
+
+function clear() {
+	name.value = "";
+	email.value = "";
+	amount.value = "";
+};
 
